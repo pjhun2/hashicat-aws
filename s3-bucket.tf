@@ -3,7 +3,7 @@ module "s3-bucket" {
   version = "2.2.0"
   # insert required variables here
  bucket = "my-s3-bucket"
- bucket_prefix = "pjhun2"
+ bucket_prefix = $prefix
   acl    = "private"
   versioning = {
     enabled = true
